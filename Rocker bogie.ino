@@ -60,11 +60,10 @@ void loop()
    else
     {X = Y = 0;}
    /*
-     * A simple algorithm that uses X and Y coordinates obtained to drive the RBm at required speed and direction
-     * +ve Y gives Y rpm to both LHS and RHS motors in forward direction && -ve Y gives Y rpm to both LHS and RHS motors in backward direction
-     * Similarly +ve X gives X rpm in forward direction to LHS motors and backward direction to RHS motors && -ve X works in exact opposie way 
-     * Two conditions for +ve and -ve Y is required for obvious reasons
-     */
+    * +ve Y gives Y rpm to both LHS and RHS motors in forward direction && -ve Y gives Y rpm to both LHS and RHS motors in backward direction
+    * Similarly +ve X gives X rpm in forward direction to LHS motors and backward direction to RHS motors && -ve X works in exact opposie way 
+    * Two conditions for +ve and -ve Y is required for obvious reasons
+    */
    if (Y>=0)
        { 
         left = Y+X;
