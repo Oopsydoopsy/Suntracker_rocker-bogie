@@ -7,7 +7,7 @@ int LDR1 = A0;
 int LDR2 = A1; 
 int LDR3 = A2;
 int LDR4 = A3;         
-int error = 5;          
+int error = 50;          
 int servopin=3;
 int servopine=11;
 void setup() 
@@ -20,7 +20,7 @@ void setup()
   pinMode(LDR4, INPUT);
   mg90.write(initial_position);
   mg90e.write(initial_positione);
-  delay(200);            
+  delay(20);            
 }  
  
 void loop() 
@@ -52,7 +52,7 @@ void loop()
     }
    }
   mg90.write(initial_position); // write the position to servo
-  delay(100);
+  delay(10);
  
    if(diff3 > error)
   {    
@@ -75,6 +75,6 @@ void loop()
      
   }
   mg90e.write(initial_positione); // write the position to servo
-  delay(100);
+  delay(10);
   
 }
