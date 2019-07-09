@@ -1,5 +1,5 @@
-#define STX 0x02                                //start of text
-#define ETX 0x03                                //end of text --> part of data sent from joystick app
+#define STX 0x02                                
+#define ETX 0x03                                
 int bt[8]={0,0,0,0,0,0,0,0};                    // Output from joystick in format 'STX'xxxyyy'ETX'
 int X,Y,left,right,i,leftspeed,rightspeed;
 /*
@@ -59,11 +59,8 @@ void loop()
    }
    else
     {X = Y = 0;}
-   /*
-    * +ve Y gives Y rpm to both LHS and RHS motors in forward direction && -ve Y gives Y rpm to both LHS and RHS motors in backward direction
-    * Similarly +ve X gives X rpm in forward direction to LHS motors and backward direction to RHS motors && -ve X works in exact opposie way 
-    * Two conditions for +ve and -ve Y is required for obvious reasons
-    */
+   //Using X and Y obtained to control left-hand side and right-hand side motor's direction and rpm.
+   //Detailed explanation in Readme.md
    if (Y>=0)
        { 
         left = Y+X;
@@ -74,9 +71,6 @@ void loop()
         left=Y-X;
         right=Y+X;
        }
-   /*
-    * Applying the obtained speeds through multiple conditions for both LHS and RHS motors to give them desired rpm and direction according to values of 'left' and 'right'
-    */
    if(left >= 95) left = 95;
    else if(left <= -95) left = -95;
    if(right >= 95) right = 95;
