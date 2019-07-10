@@ -7,7 +7,7 @@ int LDR1 = A0;
 int LDR2 = A1; 
 int LDR3 = A2;
 int LDR4 = A3;         
-int error = 50;          
+int error = 50;          //Maximum difference threshold
 int servopin=3;
 int servopine=11;
 void setup() 
@@ -31,6 +31,7 @@ void loop()
   int R4 = analogRead(LDR4);
   int diff1= abs(R1 - R2); 
   int diff3= abs(R3 - R4);
+  //Limiting servo movement to 45 degree along both sides otherwise move by 1 deg after each iterations
   if (diff1 > error) 
   {    
     if(R1 > R2)
