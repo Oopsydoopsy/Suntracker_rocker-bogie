@@ -21,9 +21,9 @@ Codes for suntracker and controlling of rocker bogie by bluetooth are seperated.
     
   ### Suntracker
     In this case 4 ldrs are kept along +ve and -ve X-Y axis. Values obtained from ldrs along X-axis and Y-axis are
-    compared and then the whole apparatus is moved with the help of two servos such that the difference between them
-    becomes less than 50. After every comparisions solar panels moves by 1 deg reducing the differnce between ldrs 
-    readings.
+    compared and then the whole apparatus is moved with the help of two servos such that the difference between 
+    them becomes less than 50. After every comparisions solar panels moves by 1 deg reducing the differnce between 
+    ldrs readings.
     
 ## Credits
   ### Team Members
