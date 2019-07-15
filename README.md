@@ -36,7 +36,7 @@ Codes for suntracker and controlling of rocker bogie by bluetooth are seperated.
   * Mohammad Saad
   * Sharan Bajjuri
   ### Special Thanks
-  Shital Chiddarwar Ma'am
+  Dr. Shital Chiddarwar
 
 
 
